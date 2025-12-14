@@ -20,3 +20,21 @@ let big=4567890456789456789456784567
 const fun=function(){
 console.log("SUBHO");
 }
+
+/************************************************/
+//stack(primitative) get copy
+//  Heap(Non-primitative) get reference
+let another="subho"
+let name=another
+another="dip"
+console.log(another)
+console.log(name)
+
+let user={
+    name: "subho@123",
+    url: "der@1234"
+}
+let user2=user;
+user2.name="dip";
+console.log(user.name)
+
