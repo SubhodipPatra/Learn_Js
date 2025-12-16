@@ -12,3 +12,6 @@ console.log(name.charAt(2))
 //replace('name','-')replace name by -
 //includes(key)//is contain or not check
 //split('-')split through -
+let stri="my name is sybho"
+let arr=stri.split(' ');
+console.log(arr)

@@ -79,3 +79,8 @@ console.log(instructor);
     {},
     {}
 ]
+// let arr1=[1,2]
+// let arr2=[4,7]
+// let arr3=arr1.concat(arr2)
+// let arr4=[...arr1,...arr2]
+// console.log(arr3,arr4)
