@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js tutorial timeout</title>
+</head>
+<body>
+    <h1 id="subho">
+        my name is subho
+    </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+  console.log(  document.getElementById('subho').textContent)
+  //settimeout
+  let m1=setTimeout(()=>{
+  document.getElementById('subho').textContent="java"
+  },2000)
+  const s=document.getElementById('stop')
+  s.addEventListener('click',()=>{
+    clearTimeout(m1)
+  })
+let m2=setTimeout(()=>{
+console.log("i am subho")
+},2000)
+</script>
+</html>

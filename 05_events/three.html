@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setInterval Example</title>
+</head>
+<body>
+
+<h1 id="subho">my name is subho</h1>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+<script>
+  const heading = document.getElementById('subho');
+  const startBtn = document.getElementById('start');
+  const stopBtn = document.getElementById('stop');
+
+  let m = null; // ✅ must be let
+
+  startBtn.addEventListener('click', () => {
+    if (m === null) { // prevent multiple intervals
+      m = setInterval(() => {
+        if (heading.textContent === "java") {
+          heading.textContent = "Python";
+        } else {
+          heading.textContent = "java";
+        }
+      }, 2000);
+    }
+  });
+
+  stopBtn.addEventListener('click', () => {
+    clearInterval(m); // ✅ correct
+    m = null;
+  });
+</script>
+
+</body>
+</html>
